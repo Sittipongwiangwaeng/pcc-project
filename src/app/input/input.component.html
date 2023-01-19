@@ -1,0 +1,20 @@
+<div class="container mt-4">
+    <div class="card">
+        <div class="card-body" style="height: 300px;">
+            <h4 class="text-center mb-4">INPUT</h4>
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Name</label>
+                <input type="text" class="form-control" [(ngModel)]="inputData.name" id="exampleFormControlInput1"
+                    placeholder="Name">
+            </div>
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Lastname</label>
+                <input type="text" class="form-control" [(ngModel)]="inputData.lastname" id="exampleFormControlInput1"
+                    placeholder="Lastname">
+            </div>
+            <div class="mb-3 text-end">
+                <button type="button" class="btn btn-success" (click)="submit()">Submit</button>
+            </div>
+        </div>
+    </div>
+</div>
