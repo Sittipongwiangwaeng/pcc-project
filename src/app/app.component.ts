@@ -149,14 +149,6 @@ export class AppComponent {
         this.invalidSaleAmount = false;
         let invalid = false;
 
-        if (this.taxFilingData.filingType === '0') {
-            this.taxFilingData.filingType = 'Ordinary Filing';
-            this.taxFilingData.surcharge = 0;
-            this.taxFilingData.penalty = 0;
-        } else {
-            this.taxFilingData.filingType = 'Additional Filing';
-        }
-
         if (!this.taxFilingData.month) {
             invalid = true;
             this.invalidMonth = true;
@@ -168,6 +160,13 @@ export class AppComponent {
             this.invalidSaleAmount = true;
         } else {
             invalid = false;
+            if (this.taxFilingData.filingType === '0') {
+                this.taxFilingData.filingType = 'Ordinary Filing';
+                this.taxFilingData.surcharge = 0;
+                this.taxFilingData.penalty = 0;
+            } else {
+                this.taxFilingData.filingType = 'Additional Filing';
+            }
         }
 
         return invalid;

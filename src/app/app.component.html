@@ -83,10 +83,10 @@
                         </div>
                         <div class="mb-3">
                             <div class="row display-align" >
-                                <div class="col-6 col-md-8">
+                                <div class="col-6 col-md-8 col-lg-9">
                                     <p class="mb-0">1. Total value of taxable electronic service exclusive of VAT</p>
                                 </div>
-                                <div class="col-6 col-md-4 text-end">
+                                <div class="col-6 col-md-4 col-lg-3 text-end">
                                     <p-inputNumber [(ngModel)]="taxFilingData.saleAmount"
                                         class="text-end p-fluid p-inputnumber" inputId="locale-us" mode="decimal"
                                         placeholder="THB" locale="en-US"
@@ -100,10 +100,10 @@
                         </div>
                         <div class="mb-3">
                             <div class="row display-align" >
-                                <div class="col-6 col-md-8">
+                                <div class="col-6 col-md-8 col-lg-9">
                                     <p class="mb-0">2. Total VAT to be remitted (7% of 1.)</p>
                                 </div>
-                                <div class="col-6 col-md-4 text-end">
+                                <div class="col-6 col-md-4 col-lg-3 text-end">
                                     <p-inputNumber [(ngModel)]="taxFilingData.taxAmount"
                                         class="text-end p-fluid p-inputnumber"
                                         [ngClass]="{'ng-invalid ng-dirty': invalidTax}" inputId="locale-us"
